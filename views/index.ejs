@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body {
+            background: #0B0014;
+            font-family: 'Segoe UI';
+            font-size: 20;
+        }
+
+        .box.flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #userName {
+            border-radius: 25px;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            height: 40px;
+            width: 310px;
+            position: relative;
+            top: -20px;
+            left: 0px;
+            outline: none;
+            border: none;
+            box-shadow: inset 0 0 10px;
+        }
+
+        button {
+            border-radius: 25px;
+            width: 70px;
+            height: 30px;
+            position: relative;
+            top: -40px;
+            left: 0px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #41A2DF;
+            color: white;
+            text-align: center;
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3;
+            /* Light grey */
+            border-top: 16px solid #3498db;
+            /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        div {
+            /* border: 2px solid red; */
+        }
+
+        .parent_loader {
+            width: 90vw;
+            z-index: 2;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #status {
+            font-size: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box flex">
+        <img src="" alt="">
+        <% if(status === "")
+        {
+        %>
+        <p>
+
+            <img src="<%=bg%>" alt="" width=" 350px" height="315px">
+        </p>
+        <p>
+        <form id="scrapeUrl" action="/home" method="POST">
+            <input type="text" name="userName" id="userName" placeholder="                      Paste the link here">
+        </form>
+        </p>
+        <p>
+            <button onclick="submitForm()">GO</button>
+        </p>
+        <%}
+        else {%>
+        <div class='parent_loader'>
+            <span id="status"><%=status%></span>
+        </div>
+        <%}%>
+    </div>
+    <footer>
+        <p>Made with 💖 by VinnovateIT </p>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+<script>
+    function submitForm() {
+        document.getElementById("scrapeUrl").submit();
+        $(".box").empty();
+        $(".box").append("<div class='parent_loader'><div class='loader box'></div></div>");
+        setTimeout(() => {
+        }, 15000);
+    }
+
+</script>
+
+</html>
