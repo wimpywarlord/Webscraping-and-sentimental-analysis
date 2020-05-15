@@ -17,7 +17,7 @@ Join Vinnovate IT, at our Live Webinar, as we demonstrates novel Web Scraping te
 
 Its quite simple, just follow the following steps.
 
->You will be need your own api keys. 
+>You will be needing your own api keys. 
  
 Start with cloning the repository in the desired directory by typing below in the command prompt:
 
