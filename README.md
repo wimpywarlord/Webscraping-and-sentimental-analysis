@@ -51,6 +51,10 @@ Optionally I recommend you to download **Sublime text** 3.Its a amazing free edi
 
 [![Built with Love](https://forthebadge.com/images/badges/built-with-love.svg)](https://www.linkedin.com/in/kshitijdhyani/) [![KSHITIJ DHYANI](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://www.linkedin.com/in/kshitijdhyani/) 
 
+Api's from rapid Api :  https://rapidapi.com/
+
+Web scraping tool : https://cheerio.js.org/
+
 Build with love and some Javascript.
 
 ## Contributing
