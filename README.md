@@ -64,6 +64,8 @@ Build with love and some Javascript.
 
 Help us make the site better in any way possible.
 
+Send Clear crisp and helpfull PRs.
+
 ## I'm a social animal!
 
 So connect with me and share your experience.
